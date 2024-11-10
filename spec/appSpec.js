@@ -160,10 +160,11 @@ describe("the function should return the answer when given a time", function() {
         expect(result).toBe("O");
     });
     
+  
     it("berlinClock should return O RRRO RROO YYROOOOOOOO YYOO when given 17:17:17", function() {
         const date = new Date(2023, 10, 8, 17, 17, 17);
-        const timestamp = date.getTime();    
-    
+        const timestamp = date.getTime();
+        
         const result = main.berlinClock(timestamp);
 
         expect(result).toBe("O RRRO RROO YYROOOOOOOO YYOO");
@@ -178,6 +179,16 @@ describe("the function should return the answer when given a time", function() {
 
         expect(result).toBe("Y RRRR RRRO YYRYYRYYRYO YYYO");
     });
+
+    it("berlinClock should return Y RROO RRRR YYRYYRYYROO OOOO when given 14:45:10", function() { 
+        const date = new Date(2023, 10, 8, 14, 45, 10);
+        const timestamp = date.getTime();
+       
+        const result = main.berlinClock(timestamp);
+
+        expect(result).toBe("Y RROO RRRR YYRYYRYYROO OOOO");
+    });
+
     
 
 
