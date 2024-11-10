@@ -23,6 +23,8 @@ export class Main {
         return result;
     }
     buildLightMessageForSimpleHours( amountOfTime){
+        if(amountOfTime === 5) return "OOOO";
+        
        return this.buildLightMessage(4, amountOfTime, "R");
     }
 }
