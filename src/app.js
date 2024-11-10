@@ -25,6 +25,9 @@ export class Main {
     buildLightMessageForSimpleHours( amountOfTime){
       return this.buildLightMessage(4, amountOfTime%5, "R");
     }
+    buildLightMessageForFiveHours(totalAmountOfLights, amountOfTime, lightColor){
+        return "OOOO";
+    }
 }
 
 function manageLightColorChanges(i, lightsOn, result) {
