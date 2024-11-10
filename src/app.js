@@ -28,6 +28,9 @@ export class Main {
     buildLightMessageForFiveHours(amountOfTime){
         return this.buildLightMessage(4, Math.floor(amountOfTime/5), "R");
     }
+    buildLightMessageForSeconds(totalAmountOfLights, amountOfTime, lightColor){
+        return "Y";
+    }
 }
 
 function manageLightColorChanges(i, lightsOn, result) {
