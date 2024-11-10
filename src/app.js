@@ -18,19 +18,24 @@ export class Main {
         let lightsOn = Math.floor(amountOfTime / 5);  
  
         for (let i = 1; i <= 11; i++) {
-            if (i <= lightsOn) {
-                if (i % 3 === 0) {
-                    result += "R";  
-                } else {
-                    result += "Y";  
-                }
-            } else {
-                result += "O";  
-            }
+            result = manageLightColorChanges(i, lightsOn, result);
         }
         return result;
     }
 
 
 
+}
+
+function manageLightColorChanges(i, lightsOn, result) {
+    if (i <= lightsOn) {
+        if (i % 3 === 0) {
+            result += "R";
+        } else {
+            result += "Y";
+        }
+    } else {
+        result += "O";
+    }
+    return result;
 }
