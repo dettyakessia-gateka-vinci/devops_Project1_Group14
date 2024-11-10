@@ -41,6 +41,7 @@ export class Main {
                this.buildLightMessageForSimpleMinutes(minutes);
 
     }
+    
 }
 
 function manageLightColorChanges(i, lightsOn, result) {
