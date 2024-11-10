@@ -22,11 +22,8 @@ export class Main {
         }
         return result;
     }
-    buildLightMessageForSimpleHours(totalAmountOfLights, amountOfTime, lightColor){
-        if(amountOfTime === 1) return "ROOO";
-        if(amountOfTime === 2) return lightColor+lightColor+ "OO";
-
-        return "OOOO";
+    buildLightMessageForSimpleHours( amountOfTime){
+       return this.buildLightMessage(4, amountOfTime, "R");
     }
 }
 

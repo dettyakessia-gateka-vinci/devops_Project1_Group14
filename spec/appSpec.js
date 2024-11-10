@@ -80,17 +80,17 @@ describe("the function should return the answer when given a time", function() {
         expect(result).toBe("YYRYYRYYRYY");
     });
     it("buildLightMessageForSimpleHours should return OOOO when given 0 hour", function() {
-        const result = main.buildLightMessageForSimpleHours(4, 0, "R");
+        const result = main.buildLightMessageForSimpleHours( 0);
 
         expect(result).toBe("OOOO");
     }); 
     it("buildLightMessageForSimpleHours should return ROOO when given 1 hour", function() {
-        const result = main.buildLightMessageForSimpleHours(4, 1, "R");
+        const result = main.buildLightMessageForSimpleHours(1);
 
         expect(result).toBe("ROOO");
     });
     it("buildLightMessageForSimpleHours should return RROO when given 2 hours", function() {
-        const result = main.buildLightMessageForSimpleHours(4, 2, "R");
+        const result = main.buildLightMessageForSimpleHours( 2);
 
         expect(result).toBe("RROO");
     });
