@@ -1,11 +1,14 @@
 export class Main {
     buildLightMessageForSimpleMinutes(totalAmountOfLights,amountOfTime, lightColor)
     {
-        if (amountOfTime === 1) return lightColor + "OOO";
-        if (amountOfTime === 2) return lightColor + lightColor + "OO";
-        if (amountOfTime === 3) return lightColor + lightColor + lightColor + "O";
-
-        return "OOOO";
+        let message="";
+        for(let i=0;i<amountOfTime;i++){
+            message+=lightColor;
+        }
+        for(let i=0;i<(totalAmountOfLights-amountOfTime);i++){
+            message+="O";
+        }
+        return message;
     }
 
 }
