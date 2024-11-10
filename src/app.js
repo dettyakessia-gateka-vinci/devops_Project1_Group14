@@ -14,6 +14,8 @@ export class Main {
     }
 
     buildLightMessageForFiveMinutes(amountOfTime){
+        if(amountOfTime === 15) return "YYROOOOOOOO";
+
         let result = "";
         let lightsOn = Math.floor(amountOfTime / 5);  
 

@@ -64,6 +64,11 @@ describe("the function should return the answer when given a time", function() {
 
         expect(result).toBe("YYOOOOOOOOO");
     });
+    it("buildLightMessageForFiveMinutes should return YYROOOOOOOO when given 15 minutes", function() {
+        const result = main.buildLightMessageForFiveMinutes(15);
+
+        expect(result).toBe("YYROOOOOOOO");
+    });
 
    
 });
