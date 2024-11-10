@@ -105,17 +105,17 @@ describe("the function should return the answer when given a time", function() {
         expect(result).toBe("ROOO");
     });
     it("buildLigthMessageForFiveHours should return OOOO when given 0 hour", function() {
-        const result = main.buildLightMessageForFiveHours(4, 0, "R");
+        const result = main.buildLightMessageForFiveHours(0);
 
         expect(result).toBe("OOOO");
     });
     it("buildLigthMessageForFiveHours should return OOOO when given 1 hour", function() {
-        const result = main.buildLightMessageForFiveHours(4, 1, "R");
+        const result = main.buildLightMessageForFiveHours(1);
 
         expect(result).toBe("OOOO");
     });
     it("buildLigthMessageForFiveHours should return ROOO when given 5 hours", function() {
-        const result = main.buildLightMessageForFiveHours(4, 5, "R");
+        const result = main.buildLightMessageForFiveHours(5);
 
         expect(result).toBe("ROOO");
     });
