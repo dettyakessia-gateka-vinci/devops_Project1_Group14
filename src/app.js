@@ -28,7 +28,7 @@ export class Main {
     buildLightMessageForFiveHours(amountOfTime){
         return this.buildLightMessage(4, Math.floor(amountOfTime/5), "R");
     }
-    buildLightMessageForSeconds(totalAmountOfLights, amountOfTime, lightColor){
+    buildLightMessageForSeconds( amountOfTime){
         return "Y";
     }
 }
