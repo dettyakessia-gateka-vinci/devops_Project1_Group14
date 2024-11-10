@@ -26,10 +26,7 @@ export class Main {
       return this.buildLightMessage(4, amountOfTime%5, "R");
     }
     buildLightMessageForFiveHours(amountOfTime){
-       if(amountOfTime === 5) return "ROOO";
-       if(amountOfTime === 10) return "RROO";
-
-        return "OOOO";
+        return this.buildLightMessage(4, Math.floor(amountOfTime/5), "R");
     }
 }
 
