@@ -144,4 +144,9 @@ describe("the function should return the answer when given a time", function() {
 
         expect(result).toBe("Y");
     });
+    it("buildLightMessageForSeconds should return O when given 3 seconds", function() {
+        const result = main.buildLightMessageForSeconds(3);
+
+        expect(result).toBe("O");
+    });
 });
