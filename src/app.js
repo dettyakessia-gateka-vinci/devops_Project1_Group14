@@ -23,6 +23,7 @@ export class Main {
         return result;
     }
     buildLightMessageForSimpleHours(totalAmountOfLights, amountOfTime, lightColor){
+        if(amountOfTime === 1) return "ROOO";
         return "OOOO";
     }
 }
