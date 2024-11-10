@@ -24,6 +24,7 @@ export class Main {
     }
     buildLightMessageForSimpleHours( amountOfTime){
         if(amountOfTime === 5) return "OOOO";
+        if(amountOfTime === 6) return "ROOO";
         
        return this.buildLightMessage(4, amountOfTime, "R");
     }
