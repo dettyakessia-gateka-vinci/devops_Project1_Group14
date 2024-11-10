@@ -15,6 +15,7 @@ export class Main {
     buildLightMessageForFiveMinutes(amountOfTime){
         return "OOOOOOOOOOO";
     }
+    
 
 
 }
