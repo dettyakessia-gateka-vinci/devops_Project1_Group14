@@ -33,6 +33,14 @@ export class Main {
 
         return "O";
     }
+    berlinClock(hours,minutes,seconds){
+        return this.buildLightMessageForSeconds(seconds)+" "+
+               this.buildLightMessageForFiveHours(hours)+" "+
+               this.buildLightMessageForSimpleHours(hours)+" "+
+               this.getFiveMinutesRow(minutes)+" "+
+               this.buildLightMessageForSimpleMinutes(minutes);
+
+    }
 }
 
 function manageLightColorChanges(i, lightsOn, result) {
