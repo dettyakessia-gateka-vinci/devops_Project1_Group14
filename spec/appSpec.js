@@ -109,6 +109,10 @@ describe("the function should return the answer when given a time", function() {
 
         expect(result).toBe("OOOO");
     });
-    
-    
+    it("buildLigthMessageForFiveHours should return OOOO when given 1 hour", function() {
+        const result = main.buildLightMessageForFiveHours(4, 1, "R");
+
+        expect(result).toBe("OOOO");
+    });
+      
 });
