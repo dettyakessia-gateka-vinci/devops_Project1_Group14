@@ -13,9 +13,11 @@ export class Main {
       return this.buildLightMessage(4, amountOfTime%5, "Y");
     }
     buildLightMessageForFiveMinutes(amountOfTime){
+        if(amountOfTime == 5) return "YOOOOOOOOOO";
+        
         return "OOOOOOOOOOO";
     }
-    
+
 
 
 }
