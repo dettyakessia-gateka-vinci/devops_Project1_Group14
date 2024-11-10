@@ -14,7 +14,8 @@ export class Main {
     }
     buildLightMessageForFiveMinutes(amountOfTime){
         if(Math.floor(amountOfTime / 5) === 1) return "YOOOOOOOOOO";
-        
+        if(Math.floor(amountOfTime / 5) === 2) return "YYOOOOOOOOO";
+       
         return "OOOOOOOOOOO";
     }
 
