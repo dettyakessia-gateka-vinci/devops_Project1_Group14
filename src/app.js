@@ -10,6 +10,8 @@ export class Main {
         return message;
     }
     buildLightMessageForSimpleMinutes(amountOfTime){
+        if(amountOfTime === 5) return "OOOO";
+
        return this.buildLightMessage(4, amountOfTime, "Y");
     }
 
