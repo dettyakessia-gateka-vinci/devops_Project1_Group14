@@ -14,20 +14,20 @@ export class Main {
     }
 
     buildLightMessageForFiveMinutes(amountOfTime){
-        if(amountOfTime === 15) return "YYROOOOOOOO";
-
         let result = "";
         let lightsOn = Math.floor(amountOfTime / 5);  
-
+ 
         for (let i = 1; i <= 11; i++) {
             if (i <= lightsOn) {
-                    result += "Y";  
-          
+                if (i % 3 === 0) {
+                    result += "R";  
                 } else {
+                    result += "Y";  
+                }
+            } else {
                 result += "O";  
             }
         }
-
         return result;
     }
 
