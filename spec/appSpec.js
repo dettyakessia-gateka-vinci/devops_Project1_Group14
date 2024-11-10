@@ -159,14 +159,22 @@ describe("the function should return the answer when given a time", function() {
 
         expect(result).toBe("O");
     });
+    
     it("berlinClock should return O RRRO RROO YYROOOOOOOO YYOO when given 17:17:17", function() {
-        const result = main.berlinClock(17, 17, 17);
+        const date = new Date(2023, 10, 8, 17, 17, 17);
+        const timestamp = date.getTime();    
+    
+        const result = main.berlinClock(timestamp);
 
         expect(result).toBe("O RRRO RROO YYROOOOOOOO YYOO");
     });
+    
    
     it("berlinClock should return Y RRRR RRRO YYRYYRYYRYO YYYO when given 23:53:10", function() {
-        const result = main.berlinClock(23, 53, 10);
+        const date = new Date(2023, 10, 8, 23, 53, 10);
+        const timestamp = date.getTime();
+       
+        const result = main.berlinClock(timestamp);
 
         expect(result).toBe("Y RRRR RRRO YYRYYRYYRYO YYYO");
     });

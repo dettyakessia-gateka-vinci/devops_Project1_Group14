@@ -33,7 +33,13 @@ export class Main {
 
         return "O";
     }
-    berlinClock(hours,minutes,seconds){
+    berlinClock(timestamp){
+        const date = new Date(timestamp);  
+
+        const hours = date.getHours();      
+        const minutes = date.getMinutes(); 
+        const seconds = date.getSeconds(); 
+
         return this.buildLightMessageForSeconds(seconds)+" "+
                this.buildLightMessageForFiveHours(hours)+" "+
                this.buildLightMessageForSimpleHours(hours)+" "+
