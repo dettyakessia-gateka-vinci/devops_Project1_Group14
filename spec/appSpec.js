@@ -4,28 +4,28 @@ describe("the function should return the answer when given a time", function() {
     const main = new Main();
 
     it("buildLightMessageForSimpleMinutes should return OOOO when given 0 minute", function() {
-        const result = main.buildLightMessageForSimpleMinutes(4, 0, "Y");
+        const result = main.buildLightMessageForSimpleMinutes(0);
 
         expect(result).toBe("OOOO");
     });
 
     it("buildLightMessageForSimpleMinutes should return YOOO when given 1 minute", function() {
-        const result = main.buildLightMessageForSimpleMinutes(4, 1, "Y");
+        const result = main.buildLightMessageForSimpleMinutes(1);
 
         expect(result).toBe("YOOO");
     });
     it("buildLightMessageForSimpleMinutes should return YYOO when given 2 minutes", function() {
-        const result = main.buildLightMessageForSimpleMinutes(4, 2, "Y");
+        const result = main.buildLightMessageForSimpleMinutes(2);
 
         expect(result).toBe("YYOO");
     });
     it("buildLightMessageForSimpleMinutes should return YYYO when given 3 minutes", function() {
-        const result = main.buildLightMessageForSimpleMinutes(4, 3, "Y");
+        const result = main.buildLightMessageForSimpleMinutes(3);
 
         expect(result).toBe("YYYO");
     });
     it("buildLightMessageForSimpleMinutes should return YYYY when given 4 minutes", function() {
-        const result = main.buildLightMessageForSimpleMinutes(4, 4, "Y");
+        const result = main.buildLightMessageForSimpleMinutes(4);
 
         expect(result).toBe("YYYY");
     });
