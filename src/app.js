@@ -12,11 +12,21 @@ export class Main {
     buildLightMessageForSimpleMinutes(amountOfTime){
       return this.buildLightMessage(4, amountOfTime%5, "Y");
     }
+
     buildLightMessageForFiveMinutes(amountOfTime){
-        if(Math.floor(amountOfTime / 5) === 1) return "YOOOOOOOOOO";
-        if(Math.floor(amountOfTime / 5) === 2) return "YYOOOOOOOOO";
-       
-        return "OOOOOOOOOOO";
+        let result = "";
+        let lightsOn = Math.floor(amountOfTime / 5);  
+
+        for (let i = 1; i <= 11; i++) {
+            if (i <= lightsOn) {
+                    result += "Y";  
+          
+                } else {
+                result += "O";  
+            }
+        }
+
+        return result;
     }
 
 
