@@ -33,6 +33,7 @@ export class Main {
 
         return "O";
     }
+    
 }
 
 function manageLightColorChanges(i, lightsOn, result) {
