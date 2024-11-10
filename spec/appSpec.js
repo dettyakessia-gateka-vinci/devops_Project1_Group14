@@ -79,6 +79,10 @@ describe("the function should return the answer when given a time", function() {
 
         expect(result).toBe("YYRYYRYYRYY");
     });
+    it("buildLightMessageForSimpleHours should return OOOO when given 0 hour", function() {
+        const result = main.buildLightMessageForSimpleHours(4, 0, "R");
 
+        expect(result).toBe("OOOO");
+    });
    
 });

@@ -22,9 +22,9 @@ export class Main {
         }
         return result;
     }
-
-
-
+    buildLightMessageForSimpleHours(totalAmountOfLights, amountOfTime, lightColor){
+        return "OOOO";
+    }
 }
 
 function manageLightColorChanges(i, lightsOn, result) {
