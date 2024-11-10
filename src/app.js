@@ -12,6 +12,9 @@ export class Main {
     buildLightMessageForSimpleMinutes(amountOfTime){
       return this.buildLightMessage(4, amountOfTime%5, "Y");
     }
+    buildLightMessageForFiveMinutes(amountOfTime){
+        return "OOOOOOOOOOO";
+    }
 
 
 }
