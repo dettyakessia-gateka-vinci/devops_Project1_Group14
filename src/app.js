@@ -37,7 +37,7 @@ export class Main {
         return this.buildLightMessageForSeconds(seconds)+" "+
                this.buildLightMessageForFiveHours(hours)+" "+
                this.buildLightMessageForSimpleHours(hours)+" "+
-               this.getFiveMinutesRow(minutes)+" "+
+               this.buildLightMessageForFiveMinutes(minutes)+" "+
                this.buildLightMessageForSimpleMinutes(minutes);
 
     }

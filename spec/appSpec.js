@@ -159,4 +159,10 @@ describe("the function should return the answer when given a time", function() {
 
         expect(result).toBe("O");
     });
+    it("berlinClock should return O RRRO RROO YYROOOOOOOO YYOO when given 17:17:17", function() {
+        const result = main.berlinClock(17, 17, 17);
+
+        expect(result).toBe("O RRRO RROO YYROOOOOOOO YYOO");
+    });
+
 });
