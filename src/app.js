@@ -29,6 +29,8 @@ export class Main {
         return this.buildLightMessage(4, Math.floor(amountOfTime/5), "R");
     }
     buildLightMessageForSeconds( amountOfTime){
+        if(amountOfTime === 1) return "O";
+
         return "Y";
     }
 }
