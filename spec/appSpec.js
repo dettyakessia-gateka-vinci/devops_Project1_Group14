@@ -164,5 +164,13 @@ describe("the function should return the answer when given a time", function() {
 
         expect(result).toBe("O RRRO RROO YYROOOOOOOO YYOO");
     });
+   
+    it("berlinClock should return Y RRRR RRRO YYRYYRYYRYO YYYO when given 23:53:10", function() {
+        const result = main.berlinClock(23, 53, 10);
+
+        expect(result).toBe("Y RRRR RRRO YYRYYRYYRYO YYYO");
+    });
+    
+
 
 });
