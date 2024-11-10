@@ -24,5 +24,10 @@ describe("the function should return the answer when given a time", function() {
 
         expect(result).toBe("YYYO");
     });
+    it("buildLightMessageForSimpleMinutes should return YYYY when given 4 minutes", function() {
+        const result = main.buildLightMessageForSimpleMinutes(4, 4, "Y");
+
+        expect(result).toBe("YYYY");
+    });
    
 });
