@@ -1,6 +1,6 @@
 import { Main } from "../src/app.js";
 
-describe("the function should return the answer when given a time", function() {
+describe("the function should return the answer when given a time, with the outputs being “O” for off, “Y” for yellow, and “R” for red", function() {
     const main = new Main();
 
     it("buildLightMessageForSimpleMinutes should return OOOO when given 0 minute", function() {
@@ -129,30 +129,30 @@ describe("the function should return the answer when given a time", function() {
 
         expect(result).toBe("RROO");
     });
-    it("buildLightMessageForSeconds should return Y when given 0 second", function() {
+    it("buildLightMessageForSeconds should return R when given 0 second", function() {
         const result = main.buildLightMessageForSeconds(0);
 
-        expect(result).toBe("Y");
+        expect(result).toBe("R");
     });
     it("buildLightMessageForSeconds should return O when given 1 second", function() {
         const result = main.buildLightMessageForSeconds(1);
 
         expect(result).toBe("O");
     });
-    it("buildLightMessageForSeconds should return Y when given 2 seconds", function() {
+    it("buildLightMessageForSeconds should return R when given 2 seconds", function() {
         const result = main.buildLightMessageForSeconds(2);
 
-        expect(result).toBe("Y");
+        expect(result).toBe("R");
     });
     it("buildLightMessageForSeconds should return O when given 3 seconds", function() {
         const result = main.buildLightMessageForSeconds(3);
 
         expect(result).toBe("O");
     });
-    it("buildLightMessageForSeconds should return Y when given 4 seconds", function() {
+    it("buildLightMessageForSeconds should return R when given 4 seconds", function() {
         const result = main.buildLightMessageForSeconds(4);
 
-        expect(result).toBe("Y");
+        expect(result).toBe("R");
     });
     it("buildLightMessageForSeconds should return O when given 5 seconds", function() {
         const result = main.buildLightMessageForSeconds(5);
@@ -171,22 +171,22 @@ describe("the function should return the answer when given a time", function() {
     });
     
    
-    it("berlinClock should return Y RRRR RRRO YYRYYRYYRYO YYYO when given 23:53:10", function() {
+    it("berlinClock should return R RRRR RRRO YYRYYRYYRYO YYYO when given 23:53:10", function() {
         const date = new Date(2023, 10, 8, 23, 53, 10);
         const timestamp = date.getTime();
        
         const result = main.berlinClock(timestamp);
 
-        expect(result).toBe("Y RRRR RRRO YYRYYRYYRYO YYYO");
+        expect(result).toBe("R RRRR RRRO YYRYYRYYRYO YYYO");
     });
 
-    it("berlinClock should return Y RROO RRRR YYRYYRYYROO OOOO when given 14:45:10", function() { 
+    it("berlinClock should return R RROO RRRR YYRYYRYYROO OOOO when given 14:45:10", function() { 
         const date = new Date(2023, 10, 8, 14, 45, 10);
         const timestamp = date.getTime();
        
         const result = main.berlinClock(timestamp);
 
-        expect(result).toBe("Y RROO RRRR YYRYYRYYROO OOOO");
+        expect(result).toBe("R RROO RRRR YYRYYRYYROO OOOO");
     });
 
     

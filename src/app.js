@@ -29,7 +29,7 @@ export class Main {
         return this.buildLightMessage(4, Math.floor(amountOfTime/5), "R");
     }
     buildLightMessageForSeconds( amountOfTime){
-        if(amountOfTime % 2 === 0) return "Y";
+        if(amountOfTime % 2 === 0) return "R";
 
         return "O";
     }
